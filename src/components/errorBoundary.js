@@ -4,12 +4,12 @@ class ErrorBoundary extends Component {
   constructor() {
     super();
     this.state = {
-      haseError: false
+      hasError: false
     }
   }
 
   componentDidCatch() {
-    this.setState({haseError: true})
+    this.setState({hasError: true})
   }
 
   render() {
